@@ -1,6 +1,20 @@
 <?php
 include 'config.php';
 
+if(file_exists('./sitemap')){}else{
+  mkdir('./sitemap');
+}
+
+if(isset($GLOBALS['argv'])){
+  
+}else{
+  echo "command:\n";
+  echo "-all rebuild all";
+  echo "-sitemap rebuild sitemap";
+  echo "-redis rebuild redis";
+  exit;
+}
+exit;
 /*
   Posts
 */
